@@ -4,7 +4,7 @@
              x:Class="ongoing.MainPage">
 
     <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+        <Frame BackgroundColor="Blue" Padding="30" CornerRadius="20">
             <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
@@ -19,6 +19,7 @@
                 </FormattedString>
             </Label.FormattedText>
         </Label>
+        <Button BackgroundColor="Red" TextColor="Green" Text="Next page" Clicked="next_page_clicked"></Button>
     </StackLayout>
 
 </ContentPage>

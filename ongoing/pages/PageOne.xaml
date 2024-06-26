@@ -6,7 +6,13 @@
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
             <Label Text="Welcome! Please log in!" />
             <Button Text="New user" Clicked="New_User_Button_Clicked"></Button>
-            <Button Text="Existing user" Clicked="Existing_User_Button_Clicked"></Button>
+            <Button Text="Login" Clicked="Existing_User_Button_Clicked"></Button>
+            <Button Text="Next page" Clicked="Next_Page_Clicked"></Button>
+            <Button Text="Pop back" Clicked="Pop_Button_Clicked"></Button>
+            
+            <Editor x:Name="textbox"  Placeholder="Enter name" />
+            <Button Text="submit" Clicked="Text_Submitted"></Button>
+            <Label x:Name="display_text" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

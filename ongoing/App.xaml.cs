@@ -10,7 +10,7 @@ namespace ongoing
         {
             InitializeComponent();
 
-            MainPage = new pages.PageOne();
+            MainPage = new NavigationPage(new MainPage());
         }
 
         protected override void OnStart()

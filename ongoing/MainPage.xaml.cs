@@ -14,5 +14,10 @@ namespace ongoing
         {
             InitializeComponent();
         }
+
+        async void next_page_clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new pages.PageOne());
+        }
     }
 }
