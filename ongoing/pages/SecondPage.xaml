@@ -3,10 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ongoing.pages.SecondPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Text="Welcome to Xamarin.Forms!" />
+
+            <Entry x:Name="email" Placeholder="Enter your email..." Keyboard="Email" IsEnabled="True" VerticalTextAlignment="Center" />
+            <Entry x:Name="password" Placeholder="Password..." IsPassword="True" />
+            <Button Text="Login" Clicked="Login_Clicked"/>
+            <Button Text="New User" Clicked="New_User_Clicked"></Button>
+            
             <Button Text="go back" Clicked="Back_Clicked"></Button>
             <Button Text="Home Page" Clicked="Home_Clicked"></Button>
         </StackLayout>

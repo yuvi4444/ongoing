@@ -27,5 +27,21 @@ namespace ongoing.pages
 			await Navigation.PushAsync(new MainPage ());
 		}
 
+		private async void Login_Clicked(object sender, EventArgs e)
+		{
+			if (email.Text == "yuvi@gmail.com" && password.Text == "123")
+			{
+				await Navigation.PushAsync (new MainPage());
+			}
+			else
+			{
+				DisplayAlert("failed", "try again", "back");
+			}
+		}
+
+        private void New_User_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }
