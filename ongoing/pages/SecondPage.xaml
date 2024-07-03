@@ -10,8 +10,16 @@
             <Entry x:Name="password" Placeholder="Password..." IsPassword="True" />
             <Button Text="Login" Clicked="Login_Clicked"/>
             <Button Text="New User" Clicked="New_User_Clicked"></Button>
-            
+
+            <Label Text="new page" TextDecorations="Underline" FontAttributes="Bold" FontSize="Large" HorizontalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="New_Page_Clicked" />
+                    <SwipeGestureRecognizer Swiped="Back_Clicked" />
+                </Label.GestureRecognizers>
+            </Label>
+
             <Button Text="go back" Clicked="Back_Clicked"></Button>
+            
             <Button Text="Home Page" Clicked="Home_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>

@@ -12,6 +12,7 @@
             <Editor x:Name="textbox"  Placeholder="Enter name" />
             <Button Text="submit" Clicked="Text_Submitted"></Button>
             <Label x:Name="display_text" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

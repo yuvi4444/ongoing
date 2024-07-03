@@ -43,5 +43,10 @@ namespace ongoing.pages
         {
 
         }
+
+        private async void New_Page_Clicked(object sender, EventArgs e)
+        {
+			await Navigation.PushAsync(new PageOne());
+        }
     }
 }
