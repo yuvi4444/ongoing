@@ -19,5 +19,10 @@ namespace ongoing
         {
             await Navigation.PushAsync(new pages.PageOne());
         }
+
+        async void Weather_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new pages.WeatherPage());
+        }
     }
 }

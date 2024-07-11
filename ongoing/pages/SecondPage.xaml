@@ -21,6 +21,7 @@
             <Button Text="go back" Clicked="Back_Clicked"></Button>
             
             <Button Text="Home Page" Clicked="Home_Clicked"></Button>
+            <Button Text="Weather" Clicked="Weather_Clicked"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

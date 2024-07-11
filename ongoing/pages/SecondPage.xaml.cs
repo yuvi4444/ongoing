@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Net.Http.Json;
 
 namespace ongoing.pages
 {
@@ -35,7 +36,7 @@ namespace ongoing.pages
 			}
 			else
 			{
-				DisplayAlert("failed", "try again", "back");
+				await DisplayAlert("failed", "try again", "back");
 			}
 		}
 
@@ -47,6 +48,11 @@ namespace ongoing.pages
         private async void New_Page_Clicked(object sender, EventArgs e)
         {
 			await Navigation.PushAsync(new PageOne());
+        }
+
+        private async void Weather_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new WeatherPage());
         }
     }
 }
